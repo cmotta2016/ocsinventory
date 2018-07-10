@@ -6,7 +6,7 @@ LABEL description="OCS (Open Computers and Software Inventory Next Generation)"
 
 ARG APT_FLAGS="-y --no-install-recommends"
 
-VOLUME /var/lib/mysql
+#VOLUME /var/lib/mysql
 
 RUN apt-get update ; \
     apt-get ${APT_FLAGS} install \
