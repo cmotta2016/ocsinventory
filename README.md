@@ -7,7 +7,7 @@ version: '3'
 
 services:
   ocs:
-    image: cmotta2016/ocsinventory:2.5
+    image: cmotta2016/ocsinventory:2.4.1
     environment:
       OCS_DBNAME: ocsdatabase
       OCS_DBSERVER_READ: database
@@ -19,12 +19,12 @@ services:
       - ocsserver:/etc/ocsinventory-reports/
       - ocsserver:/var/lib/ocsinventory-reports/
     ports:
-      - "80"
-      - "443"
+      - 80
+      - 443
     container_name: ocsinventory-server
         
   db:
-    image: mysql:5.7.25
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: 123qwe.
       MYSQL_USER: ocsuser
