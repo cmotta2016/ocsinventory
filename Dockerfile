@@ -1,7 +1,7 @@
 FROM debian:jessie-slim
 
 LABEL maintainer="contact@ocsinventory-ng.org"
-LABEL version="2.4.1"
+LABEL version="2.5"
 LABEL description="OCS (Open Computers and Software Inventory Next Generation)"
 
 ARG APT_FLAGS="-y --no-install-recommends"
