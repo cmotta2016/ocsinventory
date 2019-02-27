@@ -48,7 +48,7 @@ RUN apt-get update ; \
     /usr/sbin/a2enmod ssl ;\
     /usr/sbin/a2enmod authz_user ;\
     wget https://raw.githubusercontent.com/OCSInventory-NG/OCSInventory-Server/master/binutils/docker-download.sh ;\
-    sh docker-download.sh 2.4.1
+    sh docker-download.sh 2.5
 
 WORKDIR /tmp/ocs/Apache
 RUN perl Makefile.PL ;\
