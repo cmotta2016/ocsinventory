@@ -99,7 +99,7 @@ RUN chmod +x /root/run.sh ;\
     apt-get autoclean ;\
     apt-get autoremove ;\
     rm -rf /var/lib/apt/lists/* ;\
-    rm -rf /var/cache/apt/archives/* ;
+    rm -rf /var/cache/apt/archives/*
 
 EXPOSE 80
 EXPOSE 443
