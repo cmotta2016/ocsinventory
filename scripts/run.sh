@@ -1,6 +1,6 @@
 #!/bin/bash
 ##This lines will config the path ocsreports after the volumes were mounted.
-cd /tmp/ocs
+cd /tmp/ocs && rm -rf ocsreports/dbconfig.inc.php
 cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports
 cp binutils/ipdiscover-util.pl /usr/share/ocsinventory-reports/ocsreports/ipdiscover-util.pl
 chmod 755 /usr/share/ocsinventory-reports/ocsreports/ipdiscover-util.pl
