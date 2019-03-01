@@ -103,6 +103,8 @@ RUN chmod +x /root/run.sh ;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/*
 
+WORKDIR /var/www
+
 EXPOSE 80
 EXPOSE 443
 
