@@ -1,6 +1,6 @@
 # Docker Ocsinventory Server Container
 # Docker Compose
-Deploy ocs, glpi, mysql and reverse-proxy with nginx.
+Deploy ocs (latest version is 2.5), glpi (latest version is 9.4), mysql and reverse-proxy with nginx.
 First create a file called docker-compose.yml with following content:
 ```
 version: '3'
@@ -16,11 +16,9 @@ services:
       OCS_DBPASS: ocspasswd
     volumes:
       - ocsserver:/usr/share/ocsinventory-reports/
-      - ocsserver:/etc/ocsinventory-reports/
-      - ocsserver:/var/lib/ocsinventory-reports/
     ports:
-      - 80
-      - 443
+      - "80"
+      - "443"
     container_name: ocsinventory-server
         
   db:
